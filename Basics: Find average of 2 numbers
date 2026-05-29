@@ -1,0 +1,4 @@
+a = float(input("enter a float num: "))
+b = float(input("Enter another float num: "))
+print(f"avg =   {(a+b)/2}")
+print(f"avg=", (a+b)/2)
