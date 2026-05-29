@@ -1,0 +1,10 @@
+aa = int(input("Enter a number: "))
+bb = int(input("Enter another number: "))
+ if aa>=bb:
+     print(f"True, {aa} is greater then or equal to {bb}.")
+ else:
+     print(f"False, {bb} is greater than {aa}.")
+
+aaa = int(input("Enter a number: "))
+bbb = int(input("Enter another number: "))
+print(aaa>=bbb)
