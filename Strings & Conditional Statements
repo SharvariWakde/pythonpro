@@ -1,0 +1,139 @@
+#WAP TO INPUT USERS'S FIRST NAME AND PRINT ITS LENGTH
+name = str(input("Enter yoir first name: "))
+print(f"The length of your first name is: {len(name)}")
+
+#WAP TO FIND THE OCCURRENCE OF 'S' IN A STRING
+
+str = "Kim Taehyung is the personification of comfort and warmth. He is the embodiment of kindness and compassion, always ready to lend a helping hand to those in need. His presence is like a soothing balm, bringing solace and tranquility to those around him. With his gentle demeanor and caring nature, he has the power to heal wounds and mend broken hearts. He is a beacon of light in a world that can often be harsh and unforgiving, reminding us of the beauty and goodness that still exists. In his embrace, one can find refuge from the storms of life, and in his smile, a glimmer of hope for a brighter tomorrow."
+str.count('s')
+print(f"The occurrence of 's' in the string is: {str.count('s')}")
+
+#WAP TO CHECK IF THE STRING STARTS WITH 'A' OR NOT
+str = "Kim Taehyung is erethreal"
+if str.startswith('A'):
+     print("The string starts with 'A'")
+else:
+    print("The string does not start with 'A'")
+if str.endswith('l'):
+    print("The string ends with 'l'")
+else:
+   print("The string does not end with 'l'")
+if 'Taehyung' in str:
+     print("The string contains 'Taehyung'")
+else:    print("The string does not contain 'Taehyung'")
+
+
+text = "Kim Taehyung is my favourite person in the world"
+
+for result in (text.startswith('A'), text.endswith('l'), 'Taehyung' in text):
+    print(result)
+
+#WAP TO PRINT THE FIRST 5 CHARACTERS OF A STRING ; slicing questions
+text2 = 'Hey there, how are you doing?'
+print(text2[:5])
+print(text2[7:10])
+
+#all examples of slicing of matrices
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(matrix[0][0:2]) #first row, first two columns
+print(matrix[1][1:3]) #second row, last two columns
+print(matrix[2][0:3]) #third row, all columns
+
+# CONDITIONAL STATEMENTS FOR GRADING SYSTEM
+
+marks = float(input(" math : "))
+marks2 = float(input(" science : "))
+marks3 = float(input(" geography: "))
+total = int(marks + marks2 + marks3)
+
+print(f"Total marks: {total}")
+avg = int(total / 3)
+print(f"Average marks: {avg}")
+
+if avg > 90:
+    print("Grade A")
+elif avg> 80 and avg <= 90:
+    print("Grade B")
+elif avg > 70 and avg <= 80:
+    print("Grade C")
+elif avg > 60 and avg <= 70:
+    print("Grade D")
+else:
+    print("Grade F")
+
+
+#WAP to check if the traniee is old enough to become a kpop idol or not
+age = int(input("enter the age of the trainee who applied for the kpop idol: "))
+if age >= 15 and age <= 25:
+    print("The trainee is old enough to become a kpop idol")
+elif age < 15:
+    print("the trainee needs to wait for a few more years to become a kpop idol")
+else:
+    print("The trainee is too old to become a kpop idol")
+
+# Nested if statements: WAP to check if the trainee is old enough to become a kpop idol and also check if they have the required talent
+age = int(input("enter the age of the trainee who applied for the kpop idol: "))
+talent = input("Does the trainee have the required talent? (yes/no): ").lower()
+if age >= 15 and age <= 25:
+    if talent == 'yes':
+        print("The trainee is eligible to become a kpop idol")
+    else:
+       print("The trainee needs to work on their talent to become a kpop idol")
+elif age < 15:
+    print("the trainee needs to wait for a few more years to become a kpop idol")
+else:
+    print("The trainee is too old to become a kpop idol")
+
+#WAP TO CHECK IF THE NUMBER ENTERED BY THE USER IS ODD OR EVEN AND POSITIVE OR NEGATIVE
+num = int(input("Enter the number: "))
+if num > 0:
+    if num % 2 == 0:
+        print("The number is even and positive")
+    elif num % 2 != 0:
+        print("The number is odd and positive")
+else:
+    if num % 2 == 0:
+        print("The number is even and negative")
+    elif num % 2 != 0:
+       print("The number is odd and negative")
+
+#WAP to find greatest of three numbers entered by the user
+num = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+if num > num2 and num > num3:
+    print(f"The greatest number is: {num}")
+elif num2 > num and num2 > num3:
+    print(f"The greatest number is: {num2}")
+else:
+    print(f"The greatest number is: {num3}")
+
+#WAP TO CHECK IF THE NUM ENTERED BY USER IS MULTIPLE OF 7 OR NOT
+num = int(input("Enter a number: "))
+if num % 7 == 0:
+    print(f"{num} is a multiple of 7")
+else:
+    print(f"{num} is not a multiple of 7")
+
+# #WAP TO CHECK IF THE NUM ENTERED BY USER IS DIVISIBLE BY 3 AND 5 OR NOT
+num = int(input("Enter a number: "))
+if num % 3 == 0 and num % 5 == 0:
+    print(f"{num} is divisible by both 3 and 5")
+else:
+  print(f"{num} is not divisible by both 3 and 5")
+
+
+#WAP to find out largest of 4 numbers entered by the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+num4 = float(input("Enter the fourth number: "))
+
+if num1 > num2 and num1 > num3 and num1 > num4:
+    print(f"The greatest number is: {num1}")
+elif num2 > num1 and num2 > num3 and num2 > num4:
+     print(f"The greatest number is: {num2}")
+ elif num3 > num1 and num3 > num2 and num3 > num4:
+     print(f"The greatest number is: {num3}")
+ else:
+    print(f"The greatest number is: {num4}")
