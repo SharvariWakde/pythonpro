@@ -1,0 +1,58 @@
+ #WAP to ask the user the names of their top 3 favroite kpop groups and store them in a list and print the list
+ kpop_groups = []
+ positions = ["1st", "2nd", "3rd"]
+ for i in range(3):
+     group= str(input(f"Enter the name of your {positions[i]} favourite kpop group: "))
+     kpop_groups.append(group)
+ print(kpop_groups)
+
+
+ kpop_groups = []
+ positions = ['1st', '2nd', '3rd']
+ kpop_groups.append(str(input(f"Enter the name of your {positions[0]} favourite kpop group: ")))
+ kpop_groups.append(str(input(f"Enter the name of your {positions[1]} favourite kpop group: ")))
+ kpop_groups.append(str(input(f"Enter the name of your {positions[2]} favourite kpop group: ")))
+ print(kpop_groups)
+
+
+ #basic logic of palindrome
+ name = input("Enter your name: ")
+ name1 =name
+
+ name2 = name1[::-1]
+
+ if name == name2:
+     print(f"{name} is a palindrome")
+ else:
+     print(f"{name} is not a palindrome")
+
+ list = [1,2,3,2,1]
+ l1 = list.copy()
+ l1.reverse()
+
+ if list == l1:
+     print(f"{list} is a palindrome")
+ else:    print(f"{list} is not a palindrome")
+
+ chars = ["M", "A","'", "A", "M"]
+
+ if chars == chars[::-1]:
+     print(f"{chars} is a palindrome")
+ else:
+     print(f"{chars} is not a palindrome")
+
+#WAP to calculate the number of students with te grade "A" in the following tuple
+
+ grades = ("A", "B", "C", "A", "D", "A", "B")
+ count = 0
+ for grade in grades:
+     if grade == "A":
+         count += 1
+ print(f"The number of students with grade 'A' is: {count}")
+
+ grades = ("A", "B", "C", "A", "D", "A", "B","A", "A", "B", "C", "D", "A")
+ print(grades.count("A"))
+ convert it into a list and sort
+ grades_list = list(grades)
+ grades_list.sort()
+ print(grades_list)
