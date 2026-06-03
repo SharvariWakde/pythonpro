@@ -1,0 +1,43 @@
+taetae = { 1,2,2,"tae","tiger","tae",5,7,3,1}
+print(taetae) #sets do not allow duplicate values, so only one "tae" will be stored in the set
+print(type(taetae)) #set
+print(len(taetae)) #length of the set
+taetae.add("tae") #adding a duplicate value to the set will not change the set
+print(taetae)
+taetae.add("tae1") #adding a new value to the set
+print(taetae)
+taetae.remove(1) #removing a value from the set
+print(taetae)
+taetae.discard(2) #removing a value from the set using discard() method
+print(taetae)
+taetae.discard(10) #removing a value that is not in the set using discard() method will not give an error
+print(taetae)
+
+null_set = set() #creating an empty set . the sysntax is syntax of a dictionary but it is not a dictionary because it does not have key-value pairs
+print(null_set)
+
+null_set.add(1) #adding a value to the empty set
+null_set.add(2) #adding a value to the empty set
+null_set.add(3) #adding a value to the empty set
+null_set.add(3) #adding a value to the empty set
+null_set.add("ohhhhhhh") #adding a value to the empty set
+print(null_set)
+print("##########################################")
+taetae.remove(5) #removing a value that is not in the set will give an error
+taetae.pop() #removing a random value from the set using pop() method
+taetae.pop() #removing a random value from the set using pop() method
+print(taetae)
+print(taetae.clear()) #clearing the set using clear() method
+
+set1 = {1,2,3,4,5}
+set2 = {4,5,6,7,8}
+print(set1.union(set2)) #union of two sets
+print(set1.intersection(set2)) #intersection of two sets
+print(set1.difference(set2)) #difference of two sets
+print(set2.difference(set1)) #difference of two sets
+print(set1.symmetric_difference(set2)) #symmetric difference of two sets
+print(set1.issubset(set2)) #checking if set1 is a subset of set2
+print(set2.issubset(set1)) #checking if set2 is a subset of set1
+print(set1.issuperset(set2)) #checking if set1 is a superset of set2
+print(set2.issuperset(set1)) #checking if set2 is a superset of set1    
+
