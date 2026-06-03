@@ -1,0 +1,91 @@
+info = {
+    "name": "Kim Taehyung",
+    "Profession": "Vocalist, Dancer, Actor, Brand Ambassador",
+    "Group": "BTS",
+    "Birthdate": "December 30, 1995",
+    "Nationality": "South Korean",
+    "Zodiac Sign": "Capricorn",
+    "Favorite music genre": "jazz",
+    "Personality": "Outgoing, Charismatic, Humorous, Caring",
+    "Brands": ["Celine, compose coffee, dior, tirtir, louis vuitton, samsung"],
+    "loves": ["music, fashion, art, food, travel"],
+    "age": 30,
+    "is_married": False,
+    "height": "179.1cm",
+    "weight": "63kg",
+    7: "members",
+    3.14: "infinity",
+}
+print(info)
+print(info["name"])
+print(info[3.14])
+print(info[7])
+print(type(info)) #dictionary
+info["age"] = "32 k-age" #mutable #overwriting the value of the key "age"
+print(info)
+info["eyecolor"] = "brown" #adding new key-value pair
+info["nature"]= "full of love and care"
+print(info)
+del info[3.14] #deleting a key-value pair
+print(info)
+
+empty_dict = {} # we can also create an empty dictionary using the dict() constructor
+print(empty_dict)
+print(type(empty_dict)) #dictionary
+empty_dict["key1"] = "value1" #adding a key-value pair to the empty dictionary
+print(empty_dict)
+
+########################################  NESTED DICTIONARIES  ########################################
+
+Favorite_people = {
+    "7 people" : "From korea",
+    "BTS": {
+        "Kim Namjoon": ["Leader", "Rapper", "Songwriter"],
+        "Kim Seokjin": ["Vocalist", "Visual"],
+        "Min Yoongi": ["Rapper", "Songwriter", "Producer"],
+        "Jung Hoseok": ["Dancer", "Rapper", "Songwriter"],
+        "Park Jimin": ["Vocalist", "Dancer"],
+        "Kim Taehyung": ["Vocalist", "Dancer", "Visual"],
+        "Jeon Jungkook": ["Vocalist, Dancer"],
+        
+    }
+
+}
+print(Favorite_people)
+print(Favorite_people["BTS"]["Kim Taehyung"])
+print(Favorite_people["BTS"]["Kim Taehyung"][0])
+print(Favorite_people["BTS"]["Kim Taehyung"][1])
+print(Favorite_people["BTS"]["Kim Taehyung"][2])
+print(Favorite_people["BTS"]["Kim Taehyung"][0:2]) #slicing the list of roles of Kim Taehyung
+print(Favorite_people["BTS"]["Kim Taehyung"][1:3]) #slicing the list of roles of Kim Taehyung
+print(Favorite_people["BTS"]) 
+
+print(len(Favorite_people)) #length of the dictionary
+print(len(Favorite_people["BTS"])) #length of the nested dictionary "BTS"
+print(Favorite_people.keys()) #keys of the dictionary
+print(Favorite_people.values()) #values of the dictionary
+print(Favorite_people.items()) #key-value pairs of the dictionary
+print(Favorite_people.get("BTS")) #using the get() method to access the value of the key "BTS"
+print(Favorite_people.get("BTS").get("Kim Taehyung")) #using the get() method to access the value of the key "Kim Taehyung" in the nested dictionary "BTS"
+print(Favorite_people.update({"7 Normal boys": "From korea"})) #updating the value of the key "7 people" to "7 Normal   boys"
+print(Favorite_people)
+
+
+print(len(info.keys())) #length of the dictionary using keys() method
+print(list(info.values())) #length of the dictionary using values() method
+print("##################################################")
+pairs = list(info.items()) #key-value pairs of the dictionary
+print(pairs[0]) #accessing the first key-value pair
+
+print("##################################################")
+
+# # gives an error because there is no key "BTS1" in the dictionary
+print(Favorite_people.get("BTS1")) # returns None because there is no key "BTS1" in the dictionary
+
+print(Favorite_people.update(new_info = "This is a new key-value pair")) # adding a new key-value pair to the dictionary using the update() method
+print(Favorite_people)
+
+
+
+
+
