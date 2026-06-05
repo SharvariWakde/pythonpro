@@ -1,0 +1,32 @@
+def pr():
+    print("######################################")
+pr()
+
+
+def calc_mul(a,b):
+    mul = a * b
+    print(mul)
+    return mul
+
+calc_mul(12,2)
+calc_mul(34,6)
+calc_mul(78,100)
+pr()
+def sum(a,b):
+    return a+b
+s = sum(8,9)
+print(s)
+
+#WAP to calculaye average of 3 numbers by taking input and using functions
+num1 = int(input("enter number: "))
+num2 = int(input("enter number: "))
+num3 = int(input("enter number: "))
+
+def avg_sum(num1,num2,num3):
+    avg = (num1+num2+num3)/3
+    print(avg)
+    return avg
+print("Average is ",int(avg_sum(num1,num2,num3))) # I type casted it into an int
+
+
+
