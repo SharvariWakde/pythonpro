@@ -102,3 +102,95 @@ while count < 30:
         if(count == 25):
                 break
 
+list = ["joonie","WWH","yoongi","sunshine/hobi","mochi","taetae","golden maknae"]
+for val in list:
+        print(val)
+
+tup = (13,30,12,1995,2013)
+for val in tup:
+        print(val)
+
+
+name = "kim taehyung"
+for char in name:
+        print(char)
+
+########### for loop questions ######
+str = "i wish you would trust me again, no i dont want nobody else"
+for char in str:
+        if (char == 'a'):
+                print("a has been found in string")
+                # break # break can be used here 
+        print(char)
+else:
+        print("End here")
+
+#WAP to print squares of first 10 natural numbers using a for loop
+
+for i in range (1,11):
+        print(i**2, "is the required square of", i)
+
+#WAP to search for a number x in this tuple using loop tupple of squares of first 10 natural numbers
+
+
+tup = (1,4,9,16,25,36,49,64,81,100)
+
+x = 36
+
+for  val in tup:
+        if(val == x):
+                print(val,"found in the tupple successfully")
+
+                break
+else:
+        print( x,"not found")
+
+########################## RANGE ####################################
+for i in range(1, 100, 4):
+        print(i)
+
+for i in range(0,101,2):
+        print(i,"is an even num")
+for i in range(1,101,2):
+        print(i,"is an odd num")
+
+#WAP to print 1 to 100 and 100 to 1 and multiplication table of 6
+# for i in range(1,101):
+#         print(i)
+
+
+# for i in range(100,0,-1):
+#         print(i)
+
+# idx = 1
+# num = int(input("give us a number: "))
+# for i in range(1,11):
+#         print(num,"X",idx,"=",num * idx )
+#         idx += 1
+
+#wap to find the sum of first n numbers (using while)
+n = 5
+sum =0
+for i in range(1,n+1):
+        print(i)
+        sum += i
+        print("total sum:", sum)
+n = 9
+sum = 0
+i = 1
+while i<=n:
+        sum+=i
+        print(i)
+        print("total sum: ",sum)
+        i = i+1 # most imp otherwise infinite loop
+
+#WAP to find the factorial of first n natural numbers using for
+print("##############################################")
+numm = 8
+fact = 1
+for i in range(1, numm+1):
+        print(i)
+        fact *= i
+        print("factorial = ",fact)
+
+
