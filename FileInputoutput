@@ -1,0 +1,57 @@
+f = open("tae.txt","r")
+data = f.read(5)
+print(data)
+line1 = f.readline()
+print(line1)
+print(type(data))
+f.close()
+f = open("tae.txt","w")
+f.write("Its impossible to replce KIM TAEHYUNG")
+f.close()
+with open("tae.txt","r") as f:
+    data = f.read()
+    print(data) #with will automatically close
+
+
+
+################################### QUESTIONS #######################################
+#create a new file "practice.txt"using python and add the following data :
+
+Q = open("practice.txt","r")
+content = Q.read()
+print(content)
+Q.close()
+#easier way would be to get in write mode :::: with open("practice,txt","w") as q: and then write the content
+
+#WAF that replce all occurrences of I with Me in above file
+with open("practice.txt","r") as Q:
+    content = Q.read()
+new = content.replace("i", "Me")
+print(new)
+#overwrite now
+with open("practice.txt","w") as Q:
+    Q.write(new)
+
+#Search if the word excellence exist in the file or not
+
+word = "excellence"
+with open("practice.txt","r") as Q:
+    data = Q.read()
+    if(data.find(word) != -1):
+        print("found")
+    else:
+        print("not found")
+
+def check_for_line():
+    word = "and"
+    data = True
+    line_no = 1
+    with open("practice.txt","r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            line_no +=1
+    return -1
+print(check_for_line())
